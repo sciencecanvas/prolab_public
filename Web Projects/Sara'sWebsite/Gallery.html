@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sara's Gallery</title>
+	<style>
+		*	{
+		box-sizing: border-box;
+		}
+
+		body {
+		background-color: white;
+		padding: 20px;
+		font-family: Arial;
+		}
+
+		/* Center website */
+		.main {
+		max-width: 1000px;
+		margin: auto;
+		}
+
+		h1 {
+		font-size: 50px;
+		word-break: break-all;
+		color: #2980B9
+		}
+
+		.row {
+		margin: 8px -16px;
+		}
+
+		/* Add padding BETWEEN each column */
+		.row,
+		.row > .column {
+		padding: 8px;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+		float: left;
+		width: 50%;
+		}
+
+		/* Clear floats after rows */
+		.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+
+		/* Content */
+		.content {
+		background-color: lightgrey;
+		padding: 8px;
+		}
+
+		.footer {
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  background-color: white;
+		  color: black;
+		  text-align: center;
+		}
+
+		/* Responsive layout - makes a 1 column-layout instead of 2 columns */
+		@media screen and (max-width: 900px) {
+		.column {
+		 width: 100%;
+		}
+		}
+
+		/*Try for 4 column layout and use responsive way to stack one image over others*/
+
+		/*CSS Reference: https://www.w3schools.com*/
+	</style>
+</head>
+<body>
+	<header>
+		<hr>
+		<h1><b>My Art Gallery</b></h1>
+		<br/>
+	</header>
+	<hr>
+	<hr>
+	<main>
+
+<section>
+
+	<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/art1.jpg" alt="art1" style="width:100%">
+    </div>
+  </div>
+	<div class="column">
+    <div class="content">
+      <img src="images/art2.jpg" alt="art2" style="width:100%">
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="column">
+	<div class="content">
+		<img src="images/art3.jpg" alt="art1" style="width:100%">
+	</div>
+</div>
+<div class="column">
+	<div class="content">
+		<img src="images/art4.jpg" alt="art2" style="width:100%">
+	</div>
+</div>
+
+<section>
+
+	</main>
+	<br/>
+	<br/>
+	<footer class="footer">
+		<hr/>
+		<p>CREATED BY SARA IN 2020</p>
+	</footer>
+</body>
+</html>

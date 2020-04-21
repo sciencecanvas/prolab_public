@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sara's Website</title>
+	<style>
+		*	{
+		box-sizing: border-box;
+		}
+
+		body {
+		background-color: white;
+		padding: 20px;
+		font-family: Arial;
+		}
+
+		/* Center website */
+		.main {
+		max-width: 1000px;
+		margin: auto;
+		}
+
+		h1 {
+		font-size: 50px;
+		word-break: break-all;
+		color: #2980B9
+		}
+
+		h2 {
+		word-break: break-all;
+		color: #2980B9
+		}
+
+		h3 {
+		color: #2980B9
+		}
+
+		h4 {
+		color: #2980B9
+		}
+
+		.row {
+		margin: 8px -16px;
+		}
+
+		/* Add padding BETWEEN each column */
+		.row,
+		.row > .column {
+		padding: 8px;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+		float: left;
+		width: 50%;
+		}
+
+		/* Clear floats after rows */
+		.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+
+		/* Content */
+		.content {
+		background-color: white;
+		padding: 8px;
+		}
+
+		/* images */
+		img {
+		background-color: lightgrey;
+		padding: 10px;
+		}
+
+		.footer {
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  background-color: white;
+		  color: black;
+		  text-align: center;
+		}
+
+		/*CSS Reference: https://www.w3schools.com*/
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<hr>
+		<h1><b>Hi, I'm Sara</b></h1>
+		<h3>Dog lover, photographer and a budding Artist</h3>
+		<br/>
+	</header>
+	<hr>
+	<hr>
+	<main>
+
+	<section>
+		<div class="row">
+		  <div class="column">
+		    <div class="content">
+		      <img src="images/sara1.jpg" alt="sara" style="width:100%">
+		    </div>
+		  </div>
+			<div class="column">
+		    <div class="content">
+					<p>Welcome to my website. I enjoy taking photos. I aspire to be an artist. I love my dogs.
+						Get a sneakpeak to my life ...
+					</p>
+					<p>I will update this site with all my work, recent activities. Stay Tuned!!!
+					</p>
+		    </div>
+		  </div>
+		</div>
+	</section>
+
+<section>
+	<h2>My dogs</h2>
+	<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/sheeba.jpg" alt="sheeba" style="width:100%">
+			<h4> Sheeba </h4> is 4 years. She loves long walks and belly rubs.
+    </div>
+  </div>
+	<div class="column">
+    <div class="content">
+      <img src="images/max.jpg" alt="max" style="width:100%">
+				<h4> Max </h4> <p> is 2 years. He loves playing with ball, lazing on the couch and eating.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+	<h2>My Art Lab</h2>
+	<div class="row">
+		<div class="column">
+			<div class="content">
+				<img src="images/art22.jpg" alt="art" style="width:100%">
+			</div>
+		</div>
+		<div class="column">
+			<div class="content">
+				I used to love art ever since I was a baby when I would paint with fingertips.
+					<p>As I grew up, I mastered different skills that helped me become a better artist.
+					Each of the designs is a 3 step process in my lab. </p>
+				<ul>
+					<li>Imagination</li>
+					<li>Photography</li>
+					<li>Art</li>
+				</ul>
+				<p>I have poured in my heart in each of them. Hope that you enjoy!</p>
+				<a href="Gallery.html" target="_blank"> <h3>Click Here to View my Gallery </h3></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	</main>
+	<footer class="footer">
+		<hr/>
+		<p>CREATED BY SARA IN 2020</p>
+	</footer>
+</body>
+</html>
